@@ -1,0 +1,39 @@
+h1 {
+  color: rebeccapurple;
+}
+
+.popover-container {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-text {
+  cursor: pointer;
+  margin-top: 45px;
+  color: rebeccapurple;
+}
+
+.popover {
+  display: none;
+  box-shadow: 2px 2px rgb(203, 198, 198);
+  z-index: 10;
+  position: absolute;
+  min-width: 150px;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+}
+
+.popover-arrow {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rebeccapurple transparent transparent transparent;
+}
+
+.popover-container:hover .popover,
+.popover-container:hover .popover-arrow {
+  display: block !important;
+}
